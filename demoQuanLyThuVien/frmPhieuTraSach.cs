@@ -45,7 +45,6 @@ namespace demoQuanLyThuVien
                 li.SubItems.Add(pt.tienphat.ToString());
 
             }
-            //fix
         }
         public void khoitao()
         {
