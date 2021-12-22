@@ -69,12 +69,12 @@ namespace demoQuanLyThuVien
 
         private void btnThem_Click(object sender, EventArgs e)
         {
-            //TheLoai tl = new TheLoai();
-            //tl.maloai = txtTimKiem.Text;
-            //tl.tenloai = txtTenLoai.Text;
-            //db.TheLoais.Add(tl);
-            //db.SaveChanges();
-            //hienthi();
+            TheLoai tl = new TheLoai();
+            tl.maloai = txtTimKiem.Text;
+            tl.tenloai = txtTenLoai.Text;
+            db.TheLoais.Add(tl);
+            db.SaveChanges();
+            hienthi();
         }
 
         private void btnSua_Click(object sender, EventArgs e)
