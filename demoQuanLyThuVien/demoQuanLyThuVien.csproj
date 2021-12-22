@@ -61,6 +61,12 @@
     <Compile Include="frmDauSach.designer.cs">
       <DependentUpon>frmDauSach.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmLoaiSach.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLoaiSach.designer.cs">
+      <DependentUpon>frmLoaiSach.cs</DependentUpon>
+    </Compile>
     <Compile Include="Models\DauSach.cs" />
     <Compile Include="Models\ModelQLTV.cs" />
     <Compile Include="Models\NgonNgu.cs" />
@@ -81,6 +87,9 @@
     </Compile>
     <EmbeddedResource Include="frmDauSach.resx">
       <DependentUpon>frmDauSach.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLoaiSach.resx">
+      <DependentUpon>frmLoaiSach.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
