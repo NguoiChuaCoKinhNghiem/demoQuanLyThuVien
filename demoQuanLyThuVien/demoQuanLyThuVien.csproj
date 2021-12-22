@@ -55,6 +55,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="frmDauSach.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDauSach.designer.cs">
+      <DependentUpon>frmDauSach.cs</DependentUpon>
+    </Compile>
     <Compile Include="Models\DauSach.cs" />
     <Compile Include="Models\ModelQLTV.cs" />
     <Compile Include="Models\NgonNgu.cs" />
@@ -73,6 +79,9 @@
     <Compile Include="TrangChu.Designer.cs">
       <DependentUpon>TrangChu.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="frmDauSach.resx">
+      <DependentUpon>frmDauSach.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
