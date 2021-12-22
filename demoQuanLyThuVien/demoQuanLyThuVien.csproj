@@ -85,6 +85,12 @@
     <Compile Include="frmPhieuMuonSach.designer.cs">
       <DependentUpon>frmPhieuMuonSach.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmPhieuTraSach.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPhieuTraSach.designer.cs">
+      <DependentUpon>frmPhieuTraSach.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmQLSach.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -141,6 +147,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmPhieuMuonSach.resx">
       <DependentUpon>frmPhieuMuonSach.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPhieuTraSach.resx">
+      <DependentUpon>frmPhieuTraSach.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmQLSach.resx">
       <DependentUpon>frmQLSach.cs</DependentUpon>
