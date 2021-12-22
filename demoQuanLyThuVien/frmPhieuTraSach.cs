@@ -83,16 +83,16 @@ namespace demoQuanLyThuVien
 
         private void btnSửa_Click(object sender, EventArgs e)
         {
-            //PhieuTraSach pt = db.PhieuTraSaches.Find(txtMaPhieuTra.Text);
-            //if (pt != null)
-            //{
-            //    pt.maphieumuon = txtMaPhieuMuon.Text;
-            //    pt.ngaytra = dtNgayTra.Value;
-            //    pt.tinhtrang = cboTT.Text;
-            //    pt.tienphat = int.Parse(txtPhiPhat.Text);
-            //}
-            //db.SaveChanges();
-            //hienthi();
+            PhieuTraSach pt = db.PhieuTraSaches.Find(txtMaPhieuTra.Text);
+            if (pt != null)
+            {
+                pt.maphieumuon = txtMaPhieuMuon.Text;
+                pt.ngaytra = dtNgayTra.Value;
+                pt.tinhtrang = cboTT.Text;
+                pt.tienphat = int.Parse(txtPhiPhat.Text);
+            }
+            db.SaveChanges();
+            hienthi();
         }
 
         private void btnThem_Click(object sender, EventArgs e)
