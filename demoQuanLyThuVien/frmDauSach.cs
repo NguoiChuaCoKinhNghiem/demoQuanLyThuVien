@@ -97,14 +97,14 @@ namespace demoQuanLyThuVien
 
         private void btnSua_Click(object sender, EventArgs e)
         {
-            //DauSach ds = db.DauSaches.Find(txtTimKiem.Text);
-            //if (ds == null)
-            //{
-            //    MessageBox.Show("Đầu sách chưa tồn tại nên không thể xóa!!");
-            //}
-            //ds.tends = txtTenDS.Text;
-            //db.SaveChanges();
-            //hienthi();
+            DauSach ds = db.DauSaches.Find(txtTimKiem.Text);
+            if (ds == null)
+            {
+                MessageBox.Show("Đầu sách chưa tồn tại nên không thể xóa!!");
+            }
+            ds.tends = txtTenDS.Text;
+            db.SaveChanges();
+            hienthi();
         }
 
         private void btnXoa_Click(object sender, EventArgs e)
