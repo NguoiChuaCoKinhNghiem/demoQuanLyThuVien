@@ -26,25 +26,25 @@ namespace demoQuanLyThuVien
         }
         public void hienthi()
         {
-            //listView1.View = View.Details;
-            //listView1.GridLines = true;
-            //listView1.FullRowSelect = true;
-            //listView1.Items.Clear();
-            //listView1.Columns.Clear();
-            //listView1.Columns.Add("Mã phiếu trả",80);
-            //listView1.Columns.Add("Mã phiếu mượn", 100);
-            //listView1.Columns.Add("Ngày trả", 120);
-            //listView1.Columns.Add("Tình trạng", 120);
-            //listView1.Columns.Add("Phí phạt", 120);
-            //foreach(PhieuTraSach pt in db.PhieuTraSaches.ToList())
-            //{
-            //    ListViewItem li = listView1.Items.Add(pt.maphieutra);
-            //    li.SubItems.Add(pt.maphieumuon);
-            //    li.SubItems.Add(pt.ngaytra.Value.ToString("dd/MM/yyyy"));
-            //    li.SubItems.Add(pt.tinhtrang);
-            //    li.SubItems.Add(pt.tienphat.ToString());
+            listView1.View = View.Details;
+            listView1.GridLines = true;
+            listView1.FullRowSelect = true;
+            listView1.Items.Clear();
+            listView1.Columns.Clear();
+            listView1.Columns.Add("Mã phiếu trả", 80);
+            listView1.Columns.Add("Mã phiếu mượn", 100);
+            listView1.Columns.Add("Ngày trả", 120);
+            listView1.Columns.Add("Tình trạng", 120);
+            listView1.Columns.Add("Phí phạt", 120);
+            foreach (PhieuTraSach pt in db.PhieuTraSaches.ToList())
+            {
+                ListViewItem li = listView1.Items.Add(pt.maphieutra);
+                li.SubItems.Add(pt.maphieumuon);
+                li.SubItems.Add(pt.ngaytra.Value.ToString("dd/MM/yyyy"));
+                li.SubItems.Add(pt.tinhtrang);
+                li.SubItems.Add(pt.tienphat.ToString());
 
-            //}
+            }
         }
         public void khoitao()
         {
