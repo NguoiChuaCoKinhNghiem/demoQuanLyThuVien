@@ -36,22 +36,22 @@ namespace demoQuanLyThuVien
 
         private void btnTimKiem_Click(object sender, EventArgs e)
         {
-            //ThanhVien tv = db.ThanhViens.Find(txtTimKiem.Text);
-            //if (tv != null)
-            //{
-            //    lvThanhVien.Items.Clear();
-            //   ListViewItem li= lvThanhVien.Items.Add(tv.matv);
-            //    li.SubItems.Add(tv.hoten);
-            //    li.SubItems.Add(tv.gioitinh.ToString());
-            //    li.SubItems.Add(tv.diachi);
-            //    li.SubItems.Add(tv.sdt);
-            //    li.SubItems.Add(tv.smnd);
-            //    li.SubItems.Add(tv.mail);
-            //}
-            //else
-            //{
-            //    MessageBox.Show("Không tìm thấy thông tin thành viên!!!!!");
-            //}
+            ThanhVien tv = db.ThanhViens.Find(txtTimKiem.Text);
+            if (tv != null)
+            {
+                lvThanhVien.Items.Clear();
+                ListViewItem li = lvThanhVien.Items.Add(tv.matv);
+                li.SubItems.Add(tv.hoten);
+                li.SubItems.Add(tv.gioitinh.ToString());
+                li.SubItems.Add(tv.diachi);
+                li.SubItems.Add(tv.sdt);
+                li.SubItems.Add(tv.smnd);
+                li.SubItems.Add(tv.mail);
+            }
+            else
+            {
+                MessageBox.Show("Không tìm thấy thông tin thành viên!!!!!");
+            }
         }
 
         private void btnTaoPhieu_Click(object sender, EventArgs e)
