@@ -34,9 +34,9 @@ namespace demoQuanLyThuVien
         }
         private void btnTroVe_Click(object sender, EventArgs e)
         {
-            //this.Hide();
-            //frmQLSach ql = new frmQLSach();
-            //ql.ShowDialog();
+            this.Hide();
+            frmQLSach ql = new frmQLSach();
+            ql.ShowDialog();
         }
 
         private void btnThem_Click(object sender, EventArgs e)
