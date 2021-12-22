@@ -56,16 +56,16 @@ namespace demoQuanLyThuVien
 
         private void btnSuaPhieu_Click(object sender, EventArgs e)
         {
-            //foreach(ListViewItem li in listView1.SelectedItems)
-            //{
-            //    PhieuMuonSach pm = db.PhieuMuonSaches.Find(li.SubItems[0].Text);
-            //    frmChiTietPhieuMuon ctpm = new frmChiTietPhieuMuon(pm);
-            //    this.Hide();
-            //    ctpm.ShowDialog();
-            //}
-            //this.Hide();
-            //frmChiTietPhieuMuon ctpm = new frmChiTietPhieuMuon();
-            //ctpm.ShowDialog();
+            foreach (ListViewItem li in listView1.SelectedItems)
+            {
+                PhieuMuonSach pm = db.PhieuMuonSaches.Find(li.SubItems[0].Text);
+                frmChiTietPhieuMuon ctpm = new frmChiTietPhieuMuon(pm);
+                this.Hide();
+                ctpm.ShowDialog();
+            }
+            this.Hide();
+            frmChiTietPhieuMuon ctpm = new frmChiTietPhieuMuon();
+            ctpm.ShowDialog();
         }
 
         private void frmPhieuMuonSach_Load(object sender, EventArgs e)
