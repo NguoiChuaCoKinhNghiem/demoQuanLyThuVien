@@ -59,13 +59,13 @@ namespace demoQuanLyThuVien
             foreach (ListViewItem li in listView1.SelectedItems)
             {
                 PhieuMuonSach pm = db.PhieuMuonSaches.Find(li.SubItems[0].Text);
-                frmChiTietPhieuMuon ctpm = new frmChiTietPhieuMuon(pm);
+                frmChiTietPhieuMuon ctpm1 = new frmChiTietPhieuMuon(pm);
                 this.Hide();
-                ctpm.ShowDialog();
+                ctpm1.ShowDialog();
             }
-            this.Hide();
-            frmChiTietPhieuMuon ctpm = new frmChiTietPhieuMuon();
-            ctpm.ShowDialog();
+            //this.Hide();
+            //frmChiTietPhieuMuon ctpm = new frmChiTietPhieuMuon();
+            //ctpm.ShowDialog();
         }
 
         private void frmPhieuMuonSach_Load(object sender, EventArgs e)
