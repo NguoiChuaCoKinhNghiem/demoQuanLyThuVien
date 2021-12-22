@@ -35,6 +35,7 @@ namespace demoQuanLyThuVien
 
         private void btnThanhVien_Click(object sender, EventArgs e)
         {
+            //mở form thành viên
             this.Hide();
             frmThanhVien thanhVien = new frmThanhVien();
             thanhVien.ShowDialog();
@@ -49,6 +50,7 @@ namespace demoQuanLyThuVien
 
         private void btnPhieuMuonSach_Click(object sender, EventArgs e)
         {
+            //mở form phiếu mượn
             this.Hide();
             frmPhieuMuonSach phieumuon = new frmPhieuMuonSach();
             phieumuon.ShowDialog();
@@ -61,6 +63,7 @@ namespace demoQuanLyThuVien
 
         private void btnPhieuTra_Click(object sender, EventArgs e)
         {
+            //mở form phiếu trả
             this.Hide();
             frmPhieuTraSach pt = new frmPhieuTraSach();
             pt.ShowDialog();
