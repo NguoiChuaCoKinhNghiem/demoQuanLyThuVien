@@ -138,14 +138,14 @@ namespace demoQuanLyThuVien
             foreach (ListViewItem li in lvThanhVien.SelectedItems)
             {
                 kq = true;
-                ThanhVien tv = db.ThanhVien.Find(li.SubItems[0].Text);
-                if (tv != null)
-                {
-                    if (tv.PhieuMuonSach.Count == 0)
-                        db.ThanhVien.Remove(tv);
-                    else
-                        MessageBox.Show("Không thể xóa được!!!!!");
-                }
+                ThanhVien tv = db.ThanhViens.Find(li.SubItems[0].Text);
+                //if (tv != null)
+                //{
+                //    if (tv.PhieuMuonSach.Count == 0)
+                        db.ThanhViens.Remove(tv);
+                //    else
+                //        MessageBox.Show("Không thể xóa được!!!!!");
+                //}
                 db.SaveChanges();
             }
             if (kq)
