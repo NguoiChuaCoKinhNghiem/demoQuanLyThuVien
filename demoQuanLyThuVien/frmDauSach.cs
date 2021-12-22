@@ -109,22 +109,22 @@ namespace demoQuanLyThuVien
 
         private void btnXoa_Click(object sender, EventArgs e)
         {
-            //bool kq = false;
-            //foreach(ListViewItem li in listView1.SelectedItems)
-            //{
-            //    kq = true;
-            //    DauSach ds = db.DauSaches.Find(li.SubItems[0].Text);
-            //    if (ds != null)
-            //    {
-            //        if (ds.Saches.Count == 0)
-            //            db.DauSaches.Remove(ds);
-            //        else
-            //            MessageBox.Show("Không thể xóa!!!!");
-            //    }
-            //    db.SaveChanges();
-            //}
-            //if (kq)
-            //    hienthi();
+            bool kq = false;
+            foreach (ListViewItem li in listView1.SelectedItems)
+            {
+                kq = true;
+                DauSach ds = db.DauSaches.Find(li.SubItems[0].Text);
+                if (ds != null)
+                {
+                    if (ds.Saches.Count == 0)
+                        db.DauSaches.Remove(ds);
+                    else
+                        MessageBox.Show("Không thể xóa!!!!");
+                }
+                db.SaveChanges();
+            }
+            if (kq)
+                hienthi();
         }
 
         
