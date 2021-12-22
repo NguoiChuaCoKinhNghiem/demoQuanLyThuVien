@@ -30,16 +30,16 @@ namespace demoQuanLyThuVien
 
         private void btnTimKiem_Click(object sender, EventArgs e)
         {
-            //PhieuMuonSach pm = db.PhieuMuonSaches.Find(txtTimKiem.Text);
-            //if(pm!= null)
-            //{
-            //    listView1.Items.Clear();
-            //    ListViewItem li = listView1.Items.Add(pm.maphieumuon);
-            //    li.SubItems.Add(pm.mathanhvien);
-            //    li.SubItems.Add(pm.masach);
-            //    li.SubItems.Add(pm.ngaymuon.Value.ToString("dd/MM/yyyy"));
-            //    li.SubItems.Add(pm.ngayhentra.Value.ToString("dd/MM/yyyy"));
-            //}
+            PhieuMuonSach pm = db.PhieuMuonSaches.Find(txtTimKiem.Text);
+            if (pm != null)
+            {
+                listView1.Items.Clear();
+                ListViewItem li = listView1.Items.Add(pm.maphieumuon);
+                li.SubItems.Add(pm.mathanhvien);
+                li.SubItems.Add(pm.masach);
+                li.SubItems.Add(pm.ngaymuon.Value.ToString("dd/MM/yyyy"));
+                li.SubItems.Add(pm.ngayhentra.Value.ToString("dd/MM/yyyy"));
+            }
         }
 
         private void btnTaoPhieuTra_Click(object sender, EventArgs e)
