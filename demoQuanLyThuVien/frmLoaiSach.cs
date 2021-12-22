@@ -79,14 +79,14 @@ namespace demoQuanLyThuVien
 
         private void btnSua_Click(object sender, EventArgs e)
         {
-            //TheLoai tl = db.TheLoais.Find(txtTimKiem.Text);
-            //if (tl == null)
-            //{
-            //    MessageBox.Show("Loại sách chưa tồn tại nên không thể xóa!!");
-            //}
-            //tl.tenloai = txtTenLoai.Text;
-            //db.SaveChanges();
-            //hienthi();
+            TheLoai tl = db.TheLoais.Find(txtTimKiem.Text);
+            if (tl == null)
+            {
+                MessageBox.Show("Loại sách chưa tồn tại nên không thể xóa!!");
+            }
+            tl.tenloai = txtTenLoai.Text;
+            db.SaveChanges();
+            hienthi();
         }
 
         private void btnXoa_Click(object sender, EventArgs e)
