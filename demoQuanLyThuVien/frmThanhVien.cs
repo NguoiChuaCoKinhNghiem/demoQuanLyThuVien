@@ -113,9 +113,9 @@ namespace demoQuanLyThuVien
 
         private void btnThem_Click(object sender, EventArgs e)
         {
-            //this.Hide();
-            //frmChiTietThanhVien thanhVien = new frmChiTietThanhVien();
-            //thanhVien.ShowDialog();
+            this.Hide();
+            frmChiTietThanhVien thanhVien = new frmChiTietThanhVien();
+            thanhVien.ShowDialog();
         }
 
         private void btnSua_Click(object sender, EventArgs e)
