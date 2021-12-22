@@ -49,18 +49,18 @@ namespace demoQuanLyThuVien
 
         private void btnTimKiem_Click(object sender, EventArgs e)
         {
-            //DauSach ds = db.DauSaches.Find(txtTimKiem.Text);
-            //if (ds != null)
-            //{
-            //    listView1.Items.Clear();
-            //    ListViewItem li = listView1.Items.Add(ds.mads);
-            //    li.SubItems.Add(ds.tends);
+            DauSach ds = db.DauSaches.Find(txtTimKiem.Text);
+            if (ds != null)
+            {
+                listView1.Items.Clear();
+                ListViewItem li = listView1.Items.Add(ds.mads);
+                li.SubItems.Add(ds.tends);
 
-            //}
-            //else
-            //{
-            //    MessageBox.Show("Không tìn thấy thông tin đầu sách!!!!!");
-            //}
+            }
+            else
+            {
+                MessageBox.Show("Không tìn thấy thông tin đầu sách!!!!!");
+            }
         }
 
         private void btnTroVe_Click(object sender, EventArgs e)
