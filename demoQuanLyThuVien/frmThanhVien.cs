@@ -139,13 +139,13 @@ namespace demoQuanLyThuVien
             {
                 kq = true;
                 ThanhVien tv = db.ThanhViens.Find(li.SubItems[0].Text);
-                //if (tv != null)
-                //{
-                //    if (tv.PhieuMuonSach.Count == 0)
+                if (tv != null)
+                {
+                    if (tv.PhieuMuonSaches.Count == 0)
                         db.ThanhViens.Remove(tv);
-                //    else
-                //        MessageBox.Show("Không thể xóa được!!!!!");
-                //}
+                    else
+                        MessageBox.Show("Không thể xóa được!!!!!");
+                }
                 db.SaveChanges();
             }
             if (kq)
