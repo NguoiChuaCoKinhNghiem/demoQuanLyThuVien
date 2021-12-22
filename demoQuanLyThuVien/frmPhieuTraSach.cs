@@ -97,23 +97,23 @@ namespace demoQuanLyThuVien
 
         private void btnThem_Click(object sender, EventArgs e)
         {
-            //PhieuTraSach pt = db.PhieuTraSaches.Find(txtMaPhieuTra.Text);
-            //if (pt != null)
-            //{
-            //    MessageBox.Show("Phiếu trả sach này đã tồn tại không thể thêm mới!!!!!");
-            //}
-            //else
-            //{
-            //    pt = new PhieuTraSach();
-            //    pt.maphieumuon = txtMaPhieuMuon.Text;
-            //    pt.maphieutra = txtMaPhieuTra.Text;
-            //    pt.ngaytra = dtNgayTra.Value;
-            //    pt.tinhtrang = cboTT.Text;
-            //    pt.tienphat = int.Parse(txtPhiPhat.Text);
-            //    db.PhieuTraSaches.Add(pt);
-            //    db.SaveChanges();
-            //}
-            //hienthi();
+            PhieuTraSach pt = db.PhieuTraSaches.Find(txtMaPhieuTra.Text);
+            if (pt != null)
+            {
+                MessageBox.Show("Phiếu trả sach này đã tồn tại không thể thêm mới!!!!!");
+            }
+            else
+            {
+                pt = new PhieuTraSach();
+                pt.maphieumuon = txtMaPhieuMuon.Text;
+                pt.maphieutra = txtMaPhieuTra.Text;
+                pt.ngaytra = dtNgayTra.Value;
+                pt.tinhtrang = cboTT.Text;
+                pt.tienphat = int.Parse(txtPhiPhat.Text);
+                db.PhieuTraSaches.Add(pt);
+                db.SaveChanges();
+            }
+            hienthi();
         }
 
         private void btnXoa_Click(object sender, EventArgs e)
