@@ -91,23 +91,23 @@ namespace demoQuanLyThuVien
 
         private void btnXoa_Click(object sender, EventArgs e)
         {
-            //bool kq = false;
-            //foreach (ListViewItem li in listView1.SelectedItems)
-            //{
-            //    kq = true;
-            //    TheLoai tl = db.TheLoais.Find(li.SubItems[0].Text);
-            //    if (tl != null)
-            //    {
-            //        if (tl.Saches.Count == 0)
-            //            db.TheLoais.Remove(tl);
-            //        else
-            //            MessageBox.Show("Không thể xóa!!!!!");
-            //    }
-                    
-            //    db.SaveChanges();
-            //}
-            //if (kq)
-            //    hienthi();
+            bool kq = false;
+            foreach (ListViewItem li in listView1.SelectedItems)
+            {
+                kq = true;
+                TheLoai tl = db.TheLoais.Find(li.SubItems[0].Text);
+                if (tl != null)
+                {
+                    if (tl.Saches.Count == 0)
+                        db.TheLoais.Remove(tl);
+                    else
+                        MessageBox.Show("Không thể xóa!!!!!");
+                }
+
+                db.SaveChanges();
+            }
+            if (kq)
+                hienthi();
         }
 
         private void listView1_SelectedIndexChanged(object sender, EventArgs e)
