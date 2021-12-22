@@ -50,7 +50,7 @@ namespace demoQuanLyThuVien
         {
             foreach(ListViewItem li in listView1.SelectedItems)
             {
-                Sach s = db.Sach.Find(li.SubItems[0].Text);
+                Sach s = db.Saches.Find(li.SubItems[0].Text);
                 frmChiTietSach sach = new frmChiTietSach(s);
                 this.Hide();
                 sach.ShowDialog();
