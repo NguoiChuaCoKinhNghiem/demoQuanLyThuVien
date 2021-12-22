@@ -118,13 +118,13 @@ namespace demoQuanLyThuVien
 
         private void btnXoa_Click(object sender, EventArgs e)
         {
-            //foreach(ListViewItem li in listView1.SelectedItems)
-            //{
-            //    PhieuTraSach pt = db.PhieuTraSaches.Find(li.SubItems[0].Text);
-            //    db.PhieuTraSaches.Remove(pt);
-            //    db.SaveChanges();
-            //    hienthi();
-            //}
+            foreach (ListViewItem li in listView1.SelectedItems)
+            {
+                PhieuTraSach pt = db.PhieuTraSaches.Find(li.SubItems[0].Text);
+                db.PhieuTraSaches.Remove(pt);
+                db.SaveChanges();
+                hienthi();
+            }
         }
         public frmPhieuTraSach(PhieuMuonSach pm)
         {
