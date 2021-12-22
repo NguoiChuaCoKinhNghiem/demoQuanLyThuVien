@@ -56,14 +56,14 @@ namespace demoQuanLyThuVien
 
         private void btnTaoPhieu_Click(object sender, EventArgs e)
         {
-            //foreach(ListViewItem li in lvThanhVien.SelectedItems)
-            //{
-            //    ThanhVien tv = db.ThanhViens.Find(li.SubItems[0].Text);
-            //    this.Hide();
-            //    frmChiTietPhieuMuon phieu = new frmChiTietPhieuMuon(tv);
-            //    phieu.ShowDialog();
-            //}
-            
+            foreach (ListViewItem li in lvThanhVien.SelectedItems)
+            {
+                ThanhVien tv = db.ThanhViens.Find(li.SubItems[0].Text);
+                this.Hide();
+                frmChiTietPhieuMuon phieu = new frmChiTietPhieuMuon(tv);
+                phieu.ShowDialog();
+            }
+
         }
 
         private void frmThanhVien_Load(object sender, EventArgs e)
