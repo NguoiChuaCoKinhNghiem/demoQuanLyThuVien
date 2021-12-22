@@ -35,23 +35,23 @@ namespace demoQuanLyThuVien
 
         private void btnThanhVien_Click(object sender, EventArgs e)
         {
-            //this.Hide();
-            //frmThanhVien thanhVien = new frmThanhVien();
-            //thanhVien.ShowDialog();
+            this.Hide();
+            frmThanhVien thanhVien = new frmThanhVien();
+            thanhVien.ShowDialog();
         }
 
         private void btnSach_Click(object sender, EventArgs e)
         {
-            //this.Hide();
-            //frmQLSach ql = new frmQLSach();
-            //ql.ShowDialog();
+            this.Hide();
+            frmQLSach ql = new frmQLSach();
+            ql.ShowDialog();
         }
 
         private void btnPhieuMuonSach_Click(object sender, EventArgs e)
         {
-            //this.Hide();
-            //frmPhieuMuonSach phieumuon = new frmPhieuMuonSach();
-            //phieumuon.ShowDialog();
+            this.Hide();
+            frmPhieuMuonSach phieumuon = new frmPhieuMuonSach();
+            phieumuon.ShowDialog();
         }
 
         private void btnDangXuat_Click(object sender, EventArgs e)
@@ -61,9 +61,9 @@ namespace demoQuanLyThuVien
 
         private void btnPhieuTra_Click(object sender, EventArgs e)
         {
-            //this.Hide();
-            //frmPhieuTraSach pt = new frmPhieuTraSach();
-            //pt.ShowDialog();
+            this.Hide();
+            frmPhieuTraSach pt = new frmPhieuTraSach();
+            pt.ShowDialog();
         }
     }
 }
