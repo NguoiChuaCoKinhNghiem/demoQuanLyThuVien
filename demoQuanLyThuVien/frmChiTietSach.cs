@@ -54,45 +54,45 @@ namespace demoQuanLyThuVien
         }
         private void BtnHoanTat_Click(object sender, EventArgs e)
         {
-            //Sach s = db.Saches.Find(txtMaSach.Text);
-            //if (s != null)
-            //{
-            //    s.tensach = txtTenSach.Text;
-            //    s.dausach = cboDausach.SelectedItem.ToString();
-            //    s.loaisach = cboLoaiSach.SelectedItem.ToString();
-            //    s.tacgia = cboTG.SelectedItem.ToString();
-            //    s.ngonngu = cboNN.SelectedItem.ToString();
-            //    s.nhaxuatban = CboNXB.SelectedItem.ToString();
-            //    if (s.tinhtrang != null)
-            //    {
-            //        s.tinhtrang = cboTT.SelectedItem.ToString();
-            //    }
-            //    else
-            //    {
-            //        cboTT.SelectedIndex = 0;
-            //        s.tinhtrang = null;
-            //    }
-            //    db.SaveChanges();
-            //}
-            //else
-            //{
-            //    s = new Sach();
-            //    s.masach = txtMaSach.Text;
-            //    s.tensach = txtTenSach.Text;
-            //    s.dausach = cboDausach.SelectedItem.ToString();
-            //    s.loaisach = cboLoaiSach.SelectedItem.ToString();
-            //    s.tacgia = cboTG.SelectedItem.ToString();
-            //    s.ngonngu = cboNN.SelectedItem.ToString();
-            //    s.nhaxuatban = CboNXB.SelectedItem.ToString();
-            //    s.tinhtrang = cboTT.SelectedItem.ToString();
-            //    db.Saches.Add(s);
-            //    db.SaveChanges();
-            //}
+            Sach s = db.Saches.Find(txtMaSach.Text);
+            if (s != null)
+            {
+                s.tensach = txtTenSach.Text;
+                s.dausach = cboDausach.SelectedItem.ToString();
+                s.loaisach = cboLoaiSach.SelectedItem.ToString();
+                s.tacgia = cboTG.SelectedItem.ToString();
+                s.ngonngu = cboNN.SelectedItem.ToString();
+                s.nhaxuatban = CboNXB.SelectedItem.ToString();
+                if (s.tinhtrang != null)
+                {
+                    s.tinhtrang = cboTT.SelectedItem.ToString();
+                }
+                else
+                {
+                    cboTT.SelectedIndex = 0;
+                    s.tinhtrang = null;
+                }
+                db.SaveChanges();
+            }
+            else
+            {
+                s = new Sach();
+                s.masach = txtMaSach.Text;
+                s.tensach = txtTenSach.Text;
+                s.dausach = cboDausach.SelectedItem.ToString();
+                s.loaisach = cboLoaiSach.SelectedItem.ToString();
+                s.tacgia = cboTG.SelectedItem.ToString();
+                s.ngonngu = cboNN.SelectedItem.ToString();
+                s.nhaxuatban = CboNXB.SelectedItem.ToString();
+                s.tinhtrang = cboTT.SelectedItem.ToString();
+                db.Saches.Add(s);
+                db.SaveChanges();
+            }
 
-            //this.Hide();
-            //frmSach sach = new frmSach();
-            //sach.ShowDialog();
-            
+            this.Hide();
+            frmSach sach = new frmSach();
+            sach.ShowDialog();
+
         }
 
         private void btnTroVe_Click(object sender, EventArgs e)

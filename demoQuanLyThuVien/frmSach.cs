@@ -41,9 +41,9 @@ namespace demoQuanLyThuVien
 
         private void btnThem_Click(object sender, EventArgs e)
         {
-            //this.Hide();
-            //frmChiTietSach cts = new frmChiTietSach();
-            //cts.ShowDialog();
+            this.Hide();
+            frmChiTietSach cts = new frmChiTietSach();
+            cts.ShowDialog();
         }
 
         private void btnSua_Click(object sender, EventArgs e)
