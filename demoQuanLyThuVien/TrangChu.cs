@@ -15,7 +15,7 @@ namespace demoQuanLyThuVien
         public TrangChu()
         {
             InitializeComponent();
-
+            //Khoi tao trang chu
             //txtDate.Text = DateTime.Today.Date.ToShortDateString()+DateTime.Now.ToLongTimeString();
             txtTentt.Text = "Ngô Thùy Thương";
             txtDate.Text = DateTime.Today.Date.ToString("dd/MM/yyyy") + " " + DateTime.Now.ToString("HH:mm");
@@ -24,7 +24,7 @@ namespace demoQuanLyThuVien
 
         private void txtDate_TextChanged(object sender, EventArgs e)
         {
-            
+          
             String date = DateTime.Today.Date.ToString("dd/MM/yyyy") + " " + DateTime.Now.ToString("HH:mm");
             
             if (String.Compare(txtDate.Text, date,true)!=0)
