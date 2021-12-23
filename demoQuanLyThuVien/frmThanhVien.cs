@@ -36,6 +36,7 @@ namespace demoQuanLyThuVien
 
         private void btnTimKiem_Click(object sender, EventArgs e)
         {
+            //Tìm kiếm thành viên
             ThanhVien tv = db.ThanhViens.Find(txtTimKiem.Text);
             if (tv != null)
             {
