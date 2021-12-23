@@ -61,6 +61,7 @@ namespace demoQuanLyThuVien
 
         private void btnDangXuat_Click(object sender, EventArgs e)
         {
+            //Đăng xuất
             this.Close();
         }
 
