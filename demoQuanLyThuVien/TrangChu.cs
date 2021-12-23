@@ -51,6 +51,7 @@ namespace demoQuanLyThuVien
 
         private void btnPhieuMuonSach_Click(object sender, EventArgs e)
         {
+            //sang form phiếu mượn
             //mở form phiếu mượn
             this.Hide();
             frmPhieuMuonSach phieumuon = new frmPhieuMuonSach();
