@@ -35,6 +35,7 @@ namespace demoQuanLyThuVien
 
         private void btnThanhVien_Click(object sender, EventArgs e)
         {
+            //test git
             //mở form thành viên
             this.Hide();
             frmThanhVien thanhVien = new frmThanhVien();
