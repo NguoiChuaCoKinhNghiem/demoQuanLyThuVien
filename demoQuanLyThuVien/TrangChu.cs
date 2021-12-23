@@ -66,6 +66,7 @@ namespace demoQuanLyThuVien
 
         private void btnPhieuTra_Click(object sender, EventArgs e)
         {
+            //Sang form phiếu trả
             //mở form phiếu trả
             this.Hide();
             frmPhieuTraSach pt = new frmPhieuTraSach();
