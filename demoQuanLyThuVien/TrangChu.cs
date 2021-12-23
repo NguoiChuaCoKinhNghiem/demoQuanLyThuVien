@@ -44,6 +44,7 @@ namespace demoQuanLyThuVien
 
         private void btnSach_Click(object sender, EventArgs e)
         {
+            //Mở form sách
             this.Hide();
             frmQLSach ql = new frmQLSach();
             ql.ShowDialog();
